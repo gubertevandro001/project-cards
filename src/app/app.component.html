@@ -1,6 +1,16 @@
-<app-button 
-    [buttonText]="'Adquirir'" 
-    [buttonStyle]="'purple'" 
-    (buttonClickedEmit)="buttonClicked()"
-    [isDisabled]="true">
-</app-button>
+
+<div class="cards-container">
+    <app-card
+        [planType]="'Simples'"
+        [planPrice]="100"
+        [cardStyle]="'orange'"
+        (onButtonClicked)="onCardButtonClicked()"
+    ></app-card>
+
+    <app-card
+        [planType]="'Completo'"
+        [planPrice]="200"
+        [cardStyle]="'purple'"
+        (onButtonClicked)="onCardButtonClicked()"
+    ></app-card>
+</div>
